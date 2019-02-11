@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import NavBar from './components/NavBar/NavBar'
+import NavBar from './components/NavBar/NavBar';
+import UsersList from './components/UsersList/UsersList';
 import './App.css';
 
 class App extends Component {
@@ -39,7 +40,10 @@ class App extends Component {
       return <div>Loading...</div>;
     } else {
       return (
-          <NavBar users={this.state.users} />
+          <div>
+              <NavBar users={this.state.users} />
+              <UsersList users={this.state.users}/>
+          </div>
       );
     }
   }
