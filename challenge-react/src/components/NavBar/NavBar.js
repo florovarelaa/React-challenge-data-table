@@ -5,7 +5,7 @@ const NavBar = (props) => {
     return (
         <div>
             <h1>USERS</h1>
-            <Search />
+            <Search users={props.users}/>
             {console.log(props.users)}
         </div>
     );

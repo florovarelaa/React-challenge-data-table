@@ -39,14 +39,7 @@ class App extends Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <ul>
           <NavBar users={this.state.users} />
-          {users.map(user => (
-            <li key={user.name}>
-              {user.name} {user.price}
-            </li>
-          ))}
-        </ul>
       );
     }
   }
